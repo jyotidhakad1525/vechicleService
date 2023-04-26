@@ -1,0 +1,2 @@
+ALTER TABLE `vehicle-services`.service_appointment ADD DRIVER_ID int DEFAULT NULL;
+ALTER TABLE `vehicle-services`.service_appointment ADD CONSTRAINT FK_DRIVER_IN_APPOINTMENT FOREIGN KEY (DRIVER_ID) REFERENCES drivers(id);
